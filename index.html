@@ -1989,31 +1989,31 @@ kbd{background:var(--sur);border:1px solid var(--bd);border-radius:3px;padding:1
 #difta-ov{display:none;position:fixed;inset:0;z-index:3200;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:16px}
 #difta-ov.difta-open{display:flex}
 .difta-panel{background:var(--bg2);border:1px solid var(--bd);border-radius:18px;width:100%;max-width:640px;max-height:90vh;display:flex;flex-direction:column;animation:popIn .25s ease;box-shadow:0 24px 80px rgba(0,0,0,.45)}
-.difta-hdr{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--bd);flex-shrink:0;gap:10px}
+.difta-hdr{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--bd);flex-shrink:0;gap:10px;direction:rtl}
 .difta-hdr-ttl{display:flex;align-items:center;gap:9px;min-width:0}
-.difta-hdr-ttl-txt .dh1{font-size:15px;font-weight:700;color:var(--tx);font-family:var(--font-ar);direction:rtl}
-.difta-hdr-ttl-txt .dh2{font-size:9.5px;color:var(--tx3);letter-spacing:.3px}
+.difta-hdr-ttl-txt .dh1{font-size:16px;font-weight:700;color:var(--tx);font-family:var(--font-ur);direction:rtl}
 .difta-close{width:30px;height:30px;border-radius:50%;border:1px solid var(--bd);background:var(--sur);color:var(--tx);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:var(--t)}
 .difta-close:hover{background:var(--illum);color:var(--gl3)}
 .difta-body{overflow-y:auto;padding:18px 20px 22px;flex:1;min-height:0}
 .difta-lbl{font-size:10px;font-weight:700;color:var(--tx3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;font-family:var(--font-en)}
-.difta-inputbox{display:flex;align-items:flex-end;background:var(--sur);border:1px solid var(--bd);border-radius:var(--r);padding:10px;gap:8px;transition:var(--t)}
+.difta-inputbox{display:flex;align-items:flex-end;background:var(--sur);border:1px solid var(--bd);border-radius:var(--r);padding:10px;gap:8px;transition:var(--t);direction:rtl}
 .difta-inputbox:focus-within{border-color:var(--gl3);box-shadow:0 0 0 2px var(--illum)}
-.difta-ta{flex:1;background:none;border:none;outline:none;resize:vertical;min-height:96px;max-height:280px;overflow-y:auto;color:var(--tx);font-family:var(--font-ur);font-size:16px;line-height:2.1;direction:rtl;padding:2px}
+.difta-ta{flex:1 1 78%;background:none;border:none;outline:none;resize:vertical;min-height:96px;max-height:280px;overflow-y:auto;color:var(--tx);font-family:var(--font-ur);font-size:16px;line-height:2.1;direction:rtl;text-align:right;padding:2px}
 .difta-ta::placeholder{color:var(--tx3);font-family:var(--font-ur)}
 .difta-send{flex-shrink:0;background:linear-gradient(135deg,var(--g),var(--gl3));border:none;border-radius:var(--r-sm);color:#0a0800;display:flex;align-items:center;gap:6px;padding:10px 16px;font-weight:700;font-size:13px;font-family:var(--font-ur);cursor:pointer;transition:var(--t);white-space:nowrap}
 .difta-send:hover:not(:disabled){filter:brightness(1.08);transform:translateY(-1px)}
 .difta-send:disabled{background:var(--sur);color:var(--tx3);cursor:not-allowed}
-.difta-status{margin-top:11px;font-size:12px;color:var(--gl3);min-height:15px;text-align:center;font-family:var(--font-ur);direction:rtl}
-.difta-disclaimer{text-align:center;font-size:10.5px;color:var(--tx3);margin-top:13px;font-family:var(--font-ur);direction:rtl;line-height:1.9}
-.difta-results{margin-top:20px}
-.difta-results-hdr{font-size:11px;font-weight:700;color:var(--gl3);text-transform:uppercase;letter-spacing:.8px;border-bottom:1px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-family:var(--font-en)}
-.difta-meta{color:var(--tx3);font-size:11px;margin-bottom:10px;text-align:right;font-family:var(--font-ur);direction:rtl}
+.difta-status{margin-top:9px;font-size:12px;color:var(--gl3);min-height:15px;text-align:center;font-family:var(--font-ur);direction:rtl}
+.difta-disclaimer{text-align:center;font-size:10.5px;color:var(--tx3);margin-top:8px;font-family:var(--font-ur);direction:rtl;line-height:1.9}
+.difta-results{margin-top:12px}
+.difta-results-hdr{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:13px;font-weight:700;color:var(--gl3);border-bottom:1px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-family:var(--font-ur);direction:rtl}
+.difta-results-count{font-size:11px;font-weight:400;color:var(--tx3);white-space:nowrap}
 .difta-item{background:var(--sur);border:1px solid var(--bd);border-right:3px solid var(--gl3);border-radius:var(--r-sm);padding:13px 15px;margin-bottom:10px;transition:var(--t)}
 .difta-item.difta-clickable{cursor:pointer}
 .difta-item.difta-clickable:hover{background:var(--illum);border-color:var(--gl3)}
-.difta-item-ttl{font-family:var(--font-ur);font-size:15px;font-weight:600;color:var(--tx);line-height:1.9;direction:rtl;text-align:right}
-.difta-item-sub{color:var(--tx3);font-size:10.5px;margin-top:7px;text-align:right;font-family:var(--font-en);direction:ltr}
+.difta-item-row{display:flex;align-items:baseline;justify-content:space-between;gap:10px;direction:rtl}
+.difta-item-ttl{font-family:var(--font-ur);font-size:15px;font-weight:600;color:var(--tx);line-height:1.9;direction:rtl;text-align:right;flex:1;min-width:0}
+.difta-item-sub{color:var(--tx3);font-size:11px;text-align:left;font-family:var(--font-ur);direction:rtl;flex-shrink:0;white-space:nowrap}
 .difta-item-hint{color:var(--gl3);font-size:10.5px;margin-top:8px;text-align:right;font-family:var(--font-ur);direction:rtl}
 .difta-item-detail{margin-top:12px;padding-top:12px;border-top:1px dashed var(--bd);font-family:var(--font-ur);font-size:14.5px;line-height:2.1;color:var(--tx);direction:rtl;text-align:justify;word-break:break-word}
 .difta-item-detail.difta-plain{white-space:pre-wrap}
@@ -2028,7 +2028,10 @@ kbd{background:var(--sur);border:1px solid var(--bd);border-radius:3px;padding:1
   .difta-panel{max-width:100%}
   .difta-body{padding:14px 14px 18px}
   .difta-inputbox{flex-direction:column;align-items:stretch}
+  .difta-ta{flex:1 1 auto}
   .difta-send{justify-content:center}
+  .difta-item-row{flex-direction:column;align-items:flex-end;gap:3px}
+  .difta-item-sub{text-align:right}
 }
 </style>
 </head>
@@ -2419,6 +2422,10 @@ kbd{background:var(--sur);border:1px solid var(--bd);border-radius:3px;padding:1
       <p class="body-txt" style="text-align:justify">Al-Turath NotebookLMs Hub is a dedicated digital platform for Islamic academic research, bringing together classical Islamic scholarship and modern AI technology in one place. It hosts a growing collection of works in Arabic and Urdu, covering a wide range of Islamic sciences, all organised within multiple specialised Notebook LM's Collections.</p><br>
       <p class="body-txt" style="text-align:justify">The platform features an advanced search system and powerful research tools, making it easy to locate, explore, and study scholarly works across categories and time periods. It is designed to serve teachers, researchers, students, and academic institutions who seek a reliable and efficient research environment.</p><br>
       <p class="body-txt" style="text-align:justify">The library currently includes books from Maktabah Shamela, along with hundreds of additional titles from other sources. Further books will be added on a continuing basis, insha'Allah.</p>
+    </div>
+    <div class="info-card">
+      <div class="info-card-ttl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>Acknowledgement</div>
+      <p class="body-txt" style="text-align:justify">The <strong>Darul Ifta</strong> Q&amp;A feature within this platform is made possible through the fatwa search service provided by <strong>Darul Ifta (darulifta.info)</strong>. We are thankful to them for making this service available, on which this feature is built.</p>
     </div>
   </div>
 </div>
@@ -6185,9 +6192,11 @@ function diftaShowError(title,detail){
 function diftaRenderResults(payload){
   const wrap=document.getElementById('difta-results-wrap');
   const box=document.getElementById('difta-results');
+  const countEl=document.getElementById('difta-results-count');
   if(!wrap||!box)return;
   wrap.style.display='block';
   box.innerHTML='';
+  if(countEl)countEl.textContent='';
 
   const sr=payload.searchResults;
   const items=(sr&&sr.items)||[];
@@ -6202,29 +6211,35 @@ function diftaRenderResults(payload){
   }
 
   if(items.length){
-    if(typeof sr.total==='number'){
-      const meta=document.createElement('div');
-      meta.className='difta-meta';
-      meta.textContent='کل '+sr.total+' متعلقہ فتاویٰ ملے';
-      box.appendChild(meta);
+    if(countEl&&typeof sr.total==='number'){
+      countEl.textContent='کل '+sr.total+' متعلقہ فتاویٰ ملے';
     }
     for(const item of items){
       const div=document.createElement('div');
-      const canOpen=!!(item.id||item.fatwaNo);
+      // Robust presence check — an id/fatwaNo of 0 (or "0") must still count
+      // as a valid identifier, not be treated as "missing".
+      const hasId=item.id!==null&&item.id!==undefined&&item.id!=='';
+      const hasFatwaNo=item.fatwaNo!==null&&item.fatwaNo!==undefined&&item.fatwaNo!=='';
+      const canOpen=hasId||hasFatwaNo;
       div.className='difta-item'+(canOpen?' difta-clickable':'');
+
+      const row=document.createElement('div');
+      row.className='difta-item-row';
 
       const title=document.createElement('div');
       title.className='difta-item-ttl';
       title.textContent=item.title||'(عنوان دستیاب نہیں)';
-      div.appendChild(title);
+      row.appendChild(title);
 
       const metaLine=document.createElement('div');
       metaLine.className='difta-item-sub';
       const parts=[];
       if(item.fatwaNo)parts.push('فتویٰ نمبر: '+item.fatwaNo);
-      if(item.source)parts.push('دارالافتاء: '+item.source);
+      if(item.source)parts.push(item.source);
       metaLine.textContent=parts.join(' | ');
-      if(parts.length)div.appendChild(metaLine);
+      if(parts.length)row.appendChild(metaLine);
+
+      div.appendChild(row);
 
       if(canOpen){
         const hint=document.createElement('div');
@@ -6232,8 +6247,11 @@ function diftaRenderResults(payload){
         hint.textContent='مکمل جواب دیکھنے کے لیے کلک کریں ▾';
         div.appendChild(hint);
 
+        const detailEl=document.createElement('div');
+        detailEl.style.display='none';
+        div.appendChild(detailEl);
+
         let state='closed'; // 'closed' | 'loading' | 'open'
-        let detailEl=null;
 
         div.addEventListener('click',async()=>{
           if(state==='loading')return;
@@ -6245,19 +6263,15 @@ function diftaRenderResults(payload){
             return;
           }
 
-          if(!detailEl){
-            detailEl=document.createElement('div');
-            div.appendChild(detailEl);
-          }
-          detailEl.style.display='block';
-
           if(detailEl.dataset.loadedOnce==='1'){
+            detailEl.style.display='block';
             state='open';
             hint.textContent='چھپانے کے لیے کلک کریں ▴';
             return;
           }
 
           state='loading';
+          detailEl.style.display='block';
           detailEl.className='difta-item-detail difta-loading';
           detailEl.textContent='مکمل فتویٰ لایا جا رہا ہے...';
           hint.textContent='لوڈ ہو رہا ہے...';
@@ -6268,8 +6282,20 @@ function diftaRenderResults(payload){
               headers:{'Content-Type':'application/json'},
               body:JSON.stringify({id:item.id,fatwaNo:item.fatwaNo})
             });
-            const data=await res.json();
+            let data;
+            try{
+              data=await res.json();
+            }catch(parseErr){
+              console.error('[Darul Ifta] پہلا مسئلہ: /api/fatwa کا جواب JSON نہیں تھا، HTTP',res.status,parseErr);
+              detailEl.className='difta-item-detail';
+              detailEl.textContent='سرور کا جواب پڑھا نہیں جا سکا (HTTP '+res.status+')۔';
+              detailEl.dataset.loadedOnce='1';
+              state='open';
+              hint.textContent='چھپانے کے لیے کلک کریں ▴';
+              return;
+            }
             if(!res.ok){
+              console.error('[Darul Ifta] /api/fatwa نے error بھیجا:',res.status,data);
               detailEl.className='difta-item-detail';
               detailEl.textContent='مکمل جواب حاصل نہیں ہو سکا: '+(data.error||('HTTP '+res.status));
               detailEl.dataset.loadedOnce='1';
@@ -6277,6 +6303,7 @@ function diftaRenderResults(payload){
               hint.textContent='چھپانے کے لیے کلک کریں ▴';
               return;
             }
+            console.log('[Darul Ifta] /api/fatwa جواب:',data);
             const ft=data.fullText||'';
             const looksHtml=data.isHtml||/<\s*(br|p|h[1-6]|strong|div|span|b|i|em|ul|li)\b/i.test(ft);
             if(looksHtml&&ft){
@@ -6296,6 +6323,7 @@ function diftaRenderResults(payload){
             state='open';
             hint.textContent='چھپانے کے لیے کلک کریں ▴';
           }catch(err){
+            console.error('[Darul Ifta] /api/fatwa تک رسائی ناکام (ممکنہ CORS/network مسئلہ):',err);
             detailEl.className='difta-item-detail';
             detailEl.textContent='خرابی: '+err.message;
             detailEl.dataset.loadedOnce='1';
@@ -6386,7 +6414,7 @@ try{boot();}catch(e){
     <div class="difta-hdr">
       <div class="difta-hdr-ttl">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--gl3)" stroke-width="1.8"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg>
-        <div class="difta-hdr-ttl-txt"><div class="dh1">دار الافتاء</div><div class="dh2">Darul Ifta &middot; Fatwa Search</div></div>
+        <div class="difta-hdr-ttl-txt"><div class="dh1">دار الافتاء</div></div>
       </div>
       <button class="difta-close" onclick="closeDifta()" title="بند کریں">✕</button>
     </div>
@@ -6402,7 +6430,7 @@ try{boot();}catch(e){
       <div class="difta-status" id="difta-status"></div>
       <div class="difta-disclaimer">⚠️ فراہم کردہ فتاویٰ رہنمائی کے لیے ہیں — حتمی شرعی فیصلے کے لیے متعلقہ دارالافتاء یا مفتی صاحب سے رجوع کریں۔</div>
       <div class="difta-results" id="difta-results-wrap" style="display:none">
-        <div class="difta-results-hdr">متعلقہ فتاویٰ</div>
+        <div class="difta-results-hdr"><span>متعلقہ فتاویٰ</span><span class="difta-results-count" id="difta-results-count"></span></div>
         <div id="difta-results"></div>
       </div>
     </div>
