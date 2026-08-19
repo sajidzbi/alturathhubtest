@@ -1970,46 +1970,66 @@ kbd{background:var(--sur);border:1px solid var(--bd);border-radius:3px;padding:1
   .main-cats-grid{grid-template-columns:repeat(2,1fr);gap:6px}
 }
 
-/* ─── SM – DARUL IFTA (embedded) ─── */
-.df-masthead{text-align:center;margin-bottom:22px}
-.df-logo{width:56px;height:56px;background:linear-gradient(135deg,var(--p),var(--pl));border-radius:var(--r-lg);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:var(--sh1)}
-.df-masthead h1{font-family:var(--font-serif);font-size:22px;font-weight:700;color:var(--g);margin-bottom:4px}
-.df-masthead .df-tag{font-size:11px;color:var(--gl3);letter-spacing:.4px;margin-bottom:8px}
-.df-masthead .df-sub{color:var(--tx2);font-size:14px;font-family:var(--font-ur);direction:rtl;line-height:2}
-.df-panel{background:var(--gl2);border:1px solid var(--bd);border-radius:var(--r-lg);padding:20px;box-shadow:var(--sh1)}
-.df-label{display:block;font-size:10px;font-weight:700;color:var(--tx2);text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px;text-align:right;direction:rtl}
-.df-input-box{display:flex;align-items:flex-end;background:var(--sur);border:1px solid var(--bd);border-radius:var(--r-sm);padding:10px 10px 10px 12px;gap:8px;transition:var(--t)}
-.df-input-box:focus-within{border-color:var(--gl3);box-shadow:0 0 0 2px var(--illum)}
-.df-ta{flex:1;background:none;border:none;outline:none;color:var(--tx);font-family:var(--font-ur);font-size:17px;line-height:2;direction:rtl;resize:vertical;min-height:100px;max-height:320px;overflow-y:auto;padding:4px 2px}
-.df-ta::placeholder{color:var(--tx3);font-family:var(--font-ur);font-size:15px}
-.df-btn-send{flex-shrink:0;background:linear-gradient(135deg,var(--g),var(--gl3));border:none;border-radius:var(--r-sm);color:#0a0800;display:flex;align-items:center;gap:6px;padding:11px 18px;font-weight:700;font-size:13px;font-family:var(--font-ur);transition:var(--t);box-shadow:0 3px 14px rgba(201,168,76,.22)}
-.df-btn-send:hover:not(:disabled){filter:brightness(1.08);transform:translateY(-1px)}
-.df-btn-send:disabled{background:var(--sur);color:var(--tx3);box-shadow:none;cursor:not-allowed}
-.df-status{margin-top:12px;font-size:12px;color:var(--gl3);min-height:16px;text-align:center;direction:rtl;font-family:var(--font-ur)}
-.df-disclaimer{text-align:center;font-size:11px;color:var(--tx3);margin-top:14px;direction:rtl;font-family:var(--font-ur);line-height:1.9}
-.df-results{margin-top:24px;animation:fadeUp .28s ease}
-.df-results h2{font-size:12px;font-weight:700;color:var(--gl3);text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid var(--bd);padding-bottom:10px;margin-bottom:16px}
-.df-result-meta{color:var(--tx3);font-size:11px;margin-bottom:12px;direction:rtl;text-align:right;font-family:var(--font-ur)}
-.df-result-item{background:var(--gl2);border:1px solid var(--bd);border-right:3px solid var(--g);border-radius:var(--r-sm);padding:16px 18px;margin-bottom:12px;transition:var(--t)}
-.df-result-item.clickable{cursor:pointer}
-.df-result-item.clickable:hover{background:var(--sur);border-color:var(--bd2)}
-.df-result-title{font-family:var(--font-ur);font-size:16px;font-weight:600;color:var(--tx);line-height:1.9;direction:rtl;text-align:right}
-.df-result-sub{color:var(--tx3);font-size:10px;margin-top:8px;direction:rtl;text-align:right}
-.df-result-hint{color:var(--gl3);font-size:11px;margin-top:10px;direction:rtl;text-align:right;font-family:var(--font-ur)}
-.df-result-detail{margin-top:14px;padding-top:14px;border-top:1px dashed var(--bd);font-family:var(--font-ur);font-size:16px;line-height:2.1;color:var(--tx);direction:rtl;text-align:justify;word-break:break-word}
-.df-result-detail.plain{white-space:pre-wrap}
-.df-result-detail.loading{color:var(--tx3);font-size:12px;white-space:normal;text-align:center;direction:ltr;font-family:var(--font-en)}
-.df-result-detail strong{color:var(--gl3)}
-.df-result-detail h5{font-size:16px;color:var(--gl3);margin:16px 0 8px;font-weight:700;font-family:var(--font-ur)}
-.df-result-detail h5:first-child{margin-top:0}
-.df-result-detail p{margin:0 0 10px}
-.df-result-detail p.hawala{color:var(--tx2);font-size:13px;background:var(--sur);border-radius:var(--r-sm);padding:10px 12px;margin-bottom:10px}
-.df-error-box{background:rgba(255,85,102,.1);border:1px solid rgba(255,85,102,.28);color:var(--danger);border-radius:var(--r-sm);padding:16px 18px;font-size:13px;line-height:1.8;margin-top:16px;direction:rtl;text-align:right;font-family:var(--font-ur)}
-.df-error-box strong{display:block;margin-bottom:6px}
-.df-error-box code{direction:ltr;display:inline-block;font-family:monospace;font-size:11px;background:rgba(0,0,0,.25);padding:2px 6px;border-radius:4px;text-align:left}
-.df-empty-hint{color:var(--tx3);font-size:13px;text-align:center;padding:20px 0;direction:rtl;font-family:var(--font-ur)}
-.df-foot{text-align:center;color:var(--tx3);font-size:10px;margin-top:30px}
-@media(max-width:640px){.df-input-box{flex-direction:column;align-items:stretch}.df-btn-send{justify-content:center}}
+/* ═══════════════ DARUL IFTA (integrated Q&A) ═══════════════
+   Reuses existing tokens (--bg2,--bd,--sur,--tx,--tx2,--tx3,--p,--pl,
+   --g,--gl3,--illum,--r,--r-sm,--r-lg,--sh1..3,--t,--font-en,--font-ar,
+   --font-ur) so it automatically follows all themes. Nothing here
+   overrides any existing selector. */
+.nav-link-difta{
+  display:flex;align-items:center;gap:5px;
+  padding:6px 13px;border-radius:var(--r-sm);
+  font-size:12px;font-weight:600;cursor:pointer;
+  border:1px solid transparent;transition:var(--t);
+  font-family:var(--font-en);position:relative;
+  background:linear-gradient(135deg,var(--g),var(--gl3));
+  color:#0a0800;box-shadow:0 2px 10px rgba(201,168,76,.22);
+}
+.nav-link-difta:hover{filter:brightness(1.08);transform:translateY(-1px);box-shadow:0 4px 16px rgba(201,168,76,.32)}
+.nav-link-difta:active{transform:translateY(0) scale(.97)}
+#difta-ov{display:none;position:fixed;inset:0;z-index:3200;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:16px}
+#difta-ov.difta-open{display:flex}
+.difta-panel{background:var(--bg2);border:1px solid var(--bd);border-radius:18px;width:100%;max-width:640px;max-height:90vh;display:flex;flex-direction:column;animation:popIn .25s ease;box-shadow:0 24px 80px rgba(0,0,0,.45)}
+.difta-hdr{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--bd);flex-shrink:0;gap:10px}
+.difta-hdr-ttl{display:flex;align-items:center;gap:9px;min-width:0}
+.difta-hdr-ttl-txt .dh1{font-size:15px;font-weight:700;color:var(--tx);font-family:var(--font-ar);direction:rtl}
+.difta-hdr-ttl-txt .dh2{font-size:9.5px;color:var(--tx3);letter-spacing:.3px}
+.difta-close{width:30px;height:30px;border-radius:50%;border:1px solid var(--bd);background:var(--sur);color:var(--tx);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:var(--t)}
+.difta-close:hover{background:var(--illum);color:var(--gl3)}
+.difta-body{overflow-y:auto;padding:18px 20px 22px;flex:1;min-height:0}
+.difta-lbl{font-size:10px;font-weight:700;color:var(--tx3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;font-family:var(--font-en)}
+.difta-inputbox{display:flex;align-items:flex-end;background:var(--sur);border:1px solid var(--bd);border-radius:var(--r);padding:10px;gap:8px;transition:var(--t)}
+.difta-inputbox:focus-within{border-color:var(--gl3);box-shadow:0 0 0 2px var(--illum)}
+.difta-ta{flex:1;background:none;border:none;outline:none;resize:vertical;min-height:96px;max-height:280px;overflow-y:auto;color:var(--tx);font-family:var(--font-ur);font-size:16px;line-height:2.1;direction:rtl;padding:2px}
+.difta-ta::placeholder{color:var(--tx3);font-family:var(--font-ur)}
+.difta-send{flex-shrink:0;background:linear-gradient(135deg,var(--g),var(--gl3));border:none;border-radius:var(--r-sm);color:#0a0800;display:flex;align-items:center;gap:6px;padding:10px 16px;font-weight:700;font-size:13px;font-family:var(--font-ur);cursor:pointer;transition:var(--t);white-space:nowrap}
+.difta-send:hover:not(:disabled){filter:brightness(1.08);transform:translateY(-1px)}
+.difta-send:disabled{background:var(--sur);color:var(--tx3);cursor:not-allowed}
+.difta-status{margin-top:11px;font-size:12px;color:var(--gl3);min-height:15px;text-align:center;font-family:var(--font-ur);direction:rtl}
+.difta-disclaimer{text-align:center;font-size:10.5px;color:var(--tx3);margin-top:13px;font-family:var(--font-ur);direction:rtl;line-height:1.9}
+.difta-results{margin-top:20px}
+.difta-results-hdr{font-size:11px;font-weight:700;color:var(--gl3);text-transform:uppercase;letter-spacing:.8px;border-bottom:1px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-family:var(--font-en)}
+.difta-meta{color:var(--tx3);font-size:11px;margin-bottom:10px;text-align:right;font-family:var(--font-ur);direction:rtl}
+.difta-item{background:var(--sur);border:1px solid var(--bd);border-right:3px solid var(--gl3);border-radius:var(--r-sm);padding:13px 15px;margin-bottom:10px;transition:var(--t)}
+.difta-item.difta-clickable{cursor:pointer}
+.difta-item.difta-clickable:hover{background:var(--illum);border-color:var(--gl3)}
+.difta-item-ttl{font-family:var(--font-ur);font-size:15px;font-weight:600;color:var(--tx);line-height:1.9;direction:rtl;text-align:right}
+.difta-item-sub{color:var(--tx3);font-size:10.5px;margin-top:7px;text-align:right;font-family:var(--font-en);direction:ltr}
+.difta-item-hint{color:var(--gl3);font-size:10.5px;margin-top:8px;text-align:right;font-family:var(--font-ur);direction:rtl}
+.difta-item-detail{margin-top:12px;padding-top:12px;border-top:1px dashed var(--bd);font-family:var(--font-ur);font-size:14.5px;line-height:2.1;color:var(--tx);direction:rtl;text-align:justify;word-break:break-word}
+.difta-item-detail.difta-plain{white-space:pre-wrap}
+.difta-item-detail.difta-loading{color:var(--tx3);font-size:11.5px;white-space:normal;font-family:var(--font-en);text-align:center;direction:ltr}
+.difta-item-detail strong{color:var(--gl3)}
+.difta-item-detail p{margin:0 0 9px}
+.difta-empty{color:var(--tx3);font-size:12.5px;text-align:center;padding:18px 0;font-family:var(--font-ur);direction:rtl}
+.difta-error{background:rgba(255,85,102,.1);border:1px solid rgba(255,85,102,.22);color:var(--danger);border-radius:var(--r-sm);padding:14px 16px;font-size:12.5px;line-height:1.85;margin-top:14px;direction:rtl;text-align:right;font-family:var(--font-ur)}
+.difta-error strong{display:block;margin-bottom:6px}
+.difta-error code{direction:ltr;display:inline-block;font-family:monospace;font-size:10px;background:rgba(0,0,0,.2);padding:2px 6px;border-radius:4px;text-align:left}
+@media(max-width:640px){
+  .difta-panel{max-width:100%}
+  .difta-body{padding:14px 14px 18px}
+  .difta-inputbox{flex-direction:column;align-items:stretch}
+  .difta-send{justify-content:center}
+}
 </style>
 </head>
 
@@ -2100,8 +2120,8 @@ kbd{background:var(--sur);border:1px solid var(--bd);border-radius:3px;padding:1
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Statistics</button>
     <button class="nav-link" id="nl-contact" onclick="showV('contact')">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>Contact</button>
-    <button class="nav-link" id="nl-darulifta" onclick="showV('darulifta')">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg>دارالافتاء</button>
+    <button class="nav-link-difta" id="nl-difta" onclick="openDifta()" title="دار الافتاء">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>Darul Ifta</button>
   </nav>
   <div class="topbar-right">
     <button class="btn btn-ghost btn-icon" id="pwaInstallBtn" onclick="triggerInstall()" title="Install App" style="display:none">
@@ -2131,7 +2151,6 @@ kbd{background:var(--sur);border:1px solid var(--bd);border-radius:3px;padding:1
     <button class="mob-link" onclick="showV('favorites');closeMob()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>Favorites</button>
     <button class="mob-link" onclick="openStatsModal();closeMob()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Statistics</button>
     <button class="mob-link" onclick="showV('contact');closeMob()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>Contact</button>
-    <button class="mob-link" onclick="showV('darulifta');closeMob()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg>دارالافتاء</button>
     <div class="mob-divider"></div>
     <div class="mob-lbl">Preferences</div>
     <button class="mob-link" onclick="openThemePicker();closeMob()">Choose Theme</button>
@@ -2367,7 +2386,6 @@ kbd{background:var(--sur);border:1px solid var(--bd);border-radius:3px;padding:1
           <span class="fc-l" onclick="showV('pub')">Home</span>
           <span class="fc-l" onclick="showV('about')">About</span>
           <span class="fc-l" onclick="showV('contact')">Contact</span>
-          <span class="fc-l" onclick="showV('darulifta')">دارالافتاء</span>
         </div>
         <div>
           <div class="fc-h">Connect</div>
@@ -2426,35 +2444,6 @@ kbd{background:var(--sur);border:1px solid var(--bd);border-radius:3px;padding:1
         <button class="btn btn-ghost" onclick="shareApp('telegram')">✈️ Telegram</button>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- ════════════════ SM – DARUL IFTA VIEW ════════════════ -->
-<div class="view" id="v-darulifta">
-  <div class="about-pg" style="max-width:760px">
-    <div class="df-masthead">
-      <div class="df-logo"><svg width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
-      <h1>SM – دارالافتاء</h1>
-      <div class="df-tag">Search Verified Fatwas from Trusted Darul Iftas</div>
-      <div class="df-sub">اپنا شرعی سوال لکھیں — آپ کا سوال مختلف دارالافتاؤں کے فتاویٰ میں تلاش کیا جائے گا</div>
-    </div>
-
-    <div class="df-panel">
-      <label class="df-label" for="dfQ">اپنا سوال یہاں لکھیں</label>
-      <div class="df-input-box">
-        <textarea class="df-ta" id="dfQ" placeholder="مثال کے طور پر: نماز میں سجدہ سہو کب واجب ہوتا ہے؟"></textarea>
-        <button class="df-btn-send" id="dfSendBtn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>سوال بھیجیں</button>
-      </div>
-      <div class="df-status" id="dfStatus"></div>
-      <div class="df-disclaimer">⚠️ فتاویٰ علمی رہنمائی کے لیے پیش کیے جاتے ہیں — حتمی فیصلے کے لیے اپنے مستند مفتی سے رجوع کریں۔</div>
-    </div>
-
-    <div class="df-results" id="dfResultsWrap" style="display:none">
-      <h2>متعلقہ فتاویٰ</h2>
-      <div id="dfResults"></div>
-    </div>
-
-    <div class="df-foot">SM – Darul Ifta · Dr. Sajid Mahmood · Dept. of Islamic &amp; Religious Studies, Hazara University Mansehra</div>
   </div>
 </div>
 
@@ -6153,103 +6142,135 @@ function mcDrop(e,targetId){
 
 /* sv() is already defined and patched above */
 
-/* ── SM – DARUL IFTA (embedded fatwa search) ──
-   IMPORTANT: Darul Ifta's backend (/api/ask, /api/fatwa) is deployed
-   separately on Vercel. This Hub is hosted on GitHub Pages (a different
-   origin), so relative paths like '/api/ask' will NOT resolve here.
-   1) Replace DF_API_BASE below with your Darul Ifta production URL
-      (e.g. 'https://darulifta.vercel.app' or your custom domain).
-   2) Make sure api/ask.js and api/fatwa.js send an
-      Access-Control-Allow-Origin header allowing this Hub's origin
-      (https://sajidzbi.github.io), otherwise the browser will block
-      the cross-origin request. */
-const DF_API_BASE = 'https://darulifta.vercel.app';
-const DF_ASK_URL = DF_API_BASE + '/api/ask';
-const DF_FATWA_URL = DF_API_BASE + '/api/fatwa';
+/* ══════════════════════════════════════
+   DARUL IFTA — integrated Q&A (unchanged backend mechanism,
+   reused verbatim from the existing Darul Ifta Vercel deployment:
+   same relative endpoints, same request/response handling). */
+/* This file is hosted on GitHub Pages (a different origin than the Darul
+   Ifta Vercel deployment), so the endpoints must be absolute URLs, not
+   relative paths — a relative '/api/ask' would resolve against GitHub
+   Pages itself, which has no such endpoint. The Vercel functions were
+   updated with CORS headers to allow this cross-origin call. */
+const DIFTA_ASK_URL='https://darulifta.vercel.app/api/ask';
+const DIFTA_FATWA_URL='https://darulifta.vercel.app/api/fatwa';
 
-const dfQEl=document.getElementById('dfQ');
-const dfBtn=document.getElementById('dfSendBtn');
-const dfStatusEl=document.getElementById('dfStatus');
-const dfResultsWrap=document.getElementById('dfResultsWrap');
-const dfResultsEl=document.getElementById('dfResults');
-
-function dfSetStatus(msg){ if(dfStatusEl) dfStatusEl.textContent=msg; }
-
-function dfShowError(title,detail){
-  dfResultsWrap.style.display='block';
-  dfResultsEl.innerHTML='';
-  const box=document.createElement('div');
-  box.className='df-error-box';
-  box.innerHTML='<strong>'+title+'</strong>'+(detail?('<div><code>'+String(detail).replace(/</g,'&lt;')+'</code></div>'):'');
-  dfResultsEl.appendChild(box);
+function openDifta(){
+  const ov=document.getElementById('difta-ov');
+  if(ov)ov.classList.add('difta-open');
+  const q=document.getElementById('difta-q');
+  if(q)setTimeout(()=>q.focus(),80);
 }
+function closeDifta(){
+  const ov=document.getElementById('difta-ov');
+  if(ov)ov.classList.remove('difta-open');
+}
+window.openDifta=openDifta;
+window.closeDifta=closeDifta;
 
-function dfRenderResults(payload){
-  dfResultsWrap.style.display='block';
-  dfResultsEl.innerHTML='';
+function diftaSetStatus(msg){
+  const el=document.getElementById('difta-status');
+  if(el)el.textContent=msg||'';
+}
+function diftaShowError(title,detail){
+  const wrap=document.getElementById('difta-results-wrap');
+  const box=document.getElementById('difta-results');
+  if(!wrap||!box)return;
+  wrap.style.display='block';
+  box.innerHTML='';
+  const div=document.createElement('div');
+  div.className='difta-error';
+  div.innerHTML='<strong>'+title+'</strong>'+(detail?('<div><code>'+String(detail).replace(/</g,'&lt;')+'</code></div>'):'');
+  box.appendChild(div);
+}
+function diftaRenderResults(payload){
+  const wrap=document.getElementById('difta-results-wrap');
+  const box=document.getElementById('difta-results');
+  if(!wrap||!box)return;
+  wrap.style.display='block';
+  box.innerHTML='';
+
   const sr=payload.searchResults;
   const items=(sr&&sr.items)||[];
   const blocks=payload.results||[];
-  if(!items.length && !blocks.length){
+
+  if(!items.length&&!blocks.length){
     const p=document.createElement('div');
-    p.className='df-empty-hint';
+    p.className='difta-empty';
     p.textContent='اس سوال سے متعلق کوئی نتیجہ نہیں ملا۔';
-    dfResultsEl.appendChild(p);
+    box.appendChild(p);
     return;
   }
+
   if(items.length){
     if(typeof sr.total==='number'){
       const meta=document.createElement('div');
-      meta.className='df-result-meta';
+      meta.className='difta-meta';
       meta.textContent='کل '+sr.total+' متعلقہ فتاویٰ ملے';
-      dfResultsEl.appendChild(meta);
+      box.appendChild(meta);
     }
     for(const item of items){
       const div=document.createElement('div');
       const canOpen=!!(item.id||item.fatwaNo);
-      div.className='df-result-item'+(canOpen?' clickable':'');
+      div.className='difta-item'+(canOpen?' difta-clickable':'');
+
       const title=document.createElement('div');
-      title.className='df-result-title';
+      title.className='difta-item-ttl';
       title.textContent=item.title||'(عنوان دستیاب نہیں)';
       div.appendChild(title);
+
       const metaLine=document.createElement('div');
-      metaLine.className='df-result-sub';
+      metaLine.className='difta-item-sub';
       const parts=[];
-      if(item.fatwaNo) parts.push('فتویٰ نمبر: '+item.fatwaNo);
-      if(item.source) parts.push('دارالافتاء: '+item.source);
+      if(item.fatwaNo)parts.push('فتویٰ نمبر: '+item.fatwaNo);
+      if(item.source)parts.push('دارالافتاء: '+item.source);
       metaLine.textContent=parts.join(' | ');
-      if(parts.length) div.appendChild(metaLine);
+      if(parts.length)div.appendChild(metaLine);
+
       if(canOpen){
         const hint=document.createElement('div');
-        hint.className='df-result-hint';
+        hint.className='difta-item-hint';
         hint.textContent='مکمل جواب دیکھنے کے لیے کلک کریں ▾';
         div.appendChild(hint);
-        let state='closed';
+
+        let state='closed'; // 'closed' | 'loading' | 'open'
         let detailEl=null;
-        div.addEventListener('click', async ()=>{
-          if(state==='loading') return;
+
+        div.addEventListener('click',async()=>{
+          if(state==='loading')return;
+
           if(state==='open'){
             detailEl.style.display='none';
             state='closed';
             hint.textContent='مکمل جواب دیکھنے کے لیے کلک کریں ▾';
             return;
           }
-          if(!detailEl){ detailEl=document.createElement('div'); div.appendChild(detailEl); }
+
+          if(!detailEl){
+            detailEl=document.createElement('div');
+            div.appendChild(detailEl);
+          }
           detailEl.style.display='block';
+
           if(detailEl.dataset.loadedOnce==='1'){
             state='open';
             hint.textContent='چھپانے کے لیے کلک کریں ▴';
             return;
           }
+
           state='loading';
-          detailEl.className='df-result-detail loading';
+          detailEl.className='difta-item-detail difta-loading';
           detailEl.textContent='مکمل فتویٰ لایا جا رہا ہے...';
           hint.textContent='لوڈ ہو رہا ہے...';
+
           try{
-            const res=await fetch(DF_FATWA_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:item.id,fatwaNo:item.fatwaNo})});
+            const res=await fetch(DIFTA_FATWA_URL,{
+              method:'POST',
+              headers:{'Content-Type':'application/json'},
+              body:JSON.stringify({id:item.id,fatwaNo:item.fatwaNo})
+            });
             const data=await res.json();
             if(!res.ok){
-              detailEl.className='df-result-detail';
+              detailEl.className='difta-item-detail';
               detailEl.textContent='مکمل جواب حاصل نہیں ہو سکا: '+(data.error||('HTTP '+res.status));
               detailEl.dataset.loadedOnce='1';
               state='open';
@@ -6258,20 +6279,24 @@ function dfRenderResults(payload){
             }
             const ft=data.fullText||'';
             const looksHtml=data.isHtml||/<\s*(br|p|h[1-6]|strong|div|span|b|i|em|ul|li)\b/i.test(ft);
-            if(looksHtml && ft){
-              detailEl.className='df-result-detail';
+            if(looksHtml&&ft){
+              detailEl.className='difta-item-detail';
               detailEl.innerHTML=ft;
             }else{
-              detailEl.className='df-result-detail plain';
-              if(ft){ detailEl.textContent=ft; }
-              else if(data.raw){ detailEl.textContent='مکمل متن متوقع شکل میں نہیں ملا، سرور کا اصل جواب:\n\n'+JSON.stringify(data.raw,null,2); }
-              else{ detailEl.textContent='مکمل متن دستیاب نہیں۔'; }
+              detailEl.className='difta-item-detail difta-plain';
+              if(ft){
+                detailEl.textContent=ft;
+              }else if(data.raw){
+                detailEl.textContent='مکمل متن متوقع شکل میں نہیں ملا، سرور کا اصل جواب:\n\n'+JSON.stringify(data.raw,null,2);
+              }else{
+                detailEl.textContent='مکمل متن دستیاب نہیں۔';
+              }
             }
             detailEl.dataset.loadedOnce='1';
             state='open';
             hint.textContent='چھپانے کے لیے کلک کریں ▴';
           }catch(err){
-            detailEl.className='df-result-detail';
+            detailEl.className='difta-item-detail';
             detailEl.textContent='خرابی: '+err.message;
             detailEl.dataset.loadedOnce='1';
             state='open';
@@ -6279,50 +6304,111 @@ function dfRenderResults(payload){
           }
         });
       }
-      dfResultsEl.appendChild(div);
+
+      box.appendChild(div);
     }
     return;
   }
+
   for(const text of blocks){
     const div=document.createElement('div');
-    div.className='df-result-item';
+    div.className='difta-item';
     div.textContent=text;
-    dfResultsEl.appendChild(div);
+    box.appendChild(div);
   }
 }
 
-async function dfRunSearch(){
-  const question=dfQEl.value.trim();
-  if(!question){ dfSetStatus('براہ کرم پہلے سوال لکھیں۔'); return; }
-  dfBtn.disabled=true;
-  dfResultsWrap.style.display='none';
-  dfResultsEl.innerHTML='';
-  dfSetStatus('سوال بھیجا جا رہا ہے...');
+async function runDiftaSearch(){
+  const qEl=document.getElementById('difta-q');
+  const btn=document.getElementById('difta-send-btn');
+  const wrap=document.getElementById('difta-results-wrap');
+  const box=document.getElementById('difta-results');
+  if(!qEl||!btn||!wrap||!box)return;
+
+  const question=qEl.value.trim();
+  if(!question){
+    diftaSetStatus('براہ کرم پہلے سوال لکھیں۔');
+    return;
+  }
+
+  btn.disabled=true;
+  wrap.style.display='none';
+  box.innerHTML='';
+  diftaSetStatus('سوال بھیجا جا رہا ہے...');
+
   try{
-    const res=await fetch(DF_ASK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question})});
+    const res=await fetch(DIFTA_ASK_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({question})
+    });
     const payload=await res.json();
+
     if(!res.ok){
       let title='سوال بھیجنے میں خرابی پیش آئی';
-      if(payload.authRequired) title='MCP سرور کو authentication درکار ہے';
-      dfShowError(title,payload.error||('HTTP '+res.status));
+      if(payload.authRequired)title='MCP سرور کو authentication درکار ہے';
+      diftaShowError(title,payload.error||('HTTP '+res.status));
+      diftaSetStatus('');
       return;
     }
-    dfSetStatus('');
-    dfRenderResults(payload);
+
+    diftaSetStatus('');
+    diftaRenderResults(payload);
+
   }catch(err){
-    dfShowError('بیک اینڈ تک رسائی ناکام ہوئی',err.message);
+    diftaShowError('بیک اینڈ تک رسائی ناکام ہوئی',err.message);
+    diftaSetStatus('');
   }finally{
-    dfBtn.disabled=false;
+    btn.disabled=false;
   }
 }
-if(dfBtn) dfBtn.addEventListener('click', dfRunSearch);
-if(dfQEl) dfQEl.addEventListener('keydown', e=>{ if(e.key==='Enter'&&(e.ctrlKey||e.metaKey)) dfRunSearch(); });
+window.runDiftaSearch=runDiftaSearch;
+
+document.addEventListener('DOMContentLoaded',()=>{
+  const qEl=document.getElementById('difta-q');
+  if(qEl){
+    qEl.addEventListener('keydown',(e)=>{
+      if(e.key==='Enter'&&(e.ctrlKey||e.metaKey))runDiftaSearch();
+    });
+  }
+});
 
 /* ── BOOT ── */
 try{boot();}catch(e){
   console.error('Boot error:',e);
 }
 </script>
+<!-- ══════════════════════════════════════
+     DARUL IFTA (integrated Q&A panel)
+     ══════════════════════════════════════ -->
+<div id="difta-ov" onclick="if(event.target===this)closeDifta()">
+  <div class="difta-panel">
+    <div class="difta-hdr">
+      <div class="difta-hdr-ttl">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--gl3)" stroke-width="1.8"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg>
+        <div class="difta-hdr-ttl-txt"><div class="dh1">دار الافتاء</div><div class="dh2">Darul Ifta &middot; Fatwa Search</div></div>
+      </div>
+      <button class="difta-close" onclick="closeDifta()" title="بند کریں">✕</button>
+    </div>
+    <div class="difta-body">
+      <div class="difta-lbl">اپنا سوال لکھیں</div>
+      <div class="difta-inputbox">
+        <textarea id="difta-q" class="difta-ta" placeholder="یہاں اپنا شرعی سوال اردو میں لکھیں..."></textarea>
+        <button class="difta-send" id="difta-send-btn" onclick="runDiftaSearch()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          سوال بھیجیں
+        </button>
+      </div>
+      <div class="difta-status" id="difta-status"></div>
+      <div class="difta-disclaimer">⚠️ فراہم کردہ فتاویٰ رہنمائی کے لیے ہیں — حتمی شرعی فیصلے کے لیے متعلقہ دارالافتاء یا مفتی صاحب سے رجوع کریں۔</div>
+      <div class="difta-results" id="difta-results-wrap" style="display:none">
+        <div class="difta-results-hdr">متعلقہ فتاویٰ</div>
+        <div id="difta-results"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- INLINE BOOK EDIT MODAL -->
 <div id="bookEditOverlay" style="display:none;position:fixed;inset:0;z-index:4000;background:rgba(0,0,0,.75);align-items:center;justify-content:center;padding:20px">
   <div style="background:var(--bg2);border:1px solid var(--bd);border-radius:12px;width:100%;max-width:620px;padding:24px;direction:rtl">
