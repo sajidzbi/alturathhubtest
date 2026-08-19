@@ -1,0 +1,21 @@
+{
+  "name": "Al-Turath NotebookLMs Hub",
+  "short_name": "Al-Turath Hub",
+  "description": "Digital Islamic Knowledge Platform — Al-Turath NotebookLMs Hub by Dr. Sajid Mahmood, Hazara University",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "./index.html",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "browser"],
+  "orientation": "any",
+  "background_color": "#fff3e0",
+  "theme_color": "#e65100",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "books", "reference"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "maskable-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
