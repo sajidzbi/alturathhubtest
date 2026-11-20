@@ -23,7 +23,7 @@
 
 // Bump this on every deploy so old caches are dropped and every core
 // asset is re-fetched fresh (see install handler below).
-const CACHE_NAME = 'alturath-hub-cache-v39';
+const CACHE_NAME = 'alturath-hub-cache-v40';
 const CORE_ASSETS = [
   './',
   './index.html',
